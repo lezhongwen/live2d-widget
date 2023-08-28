@@ -60,7 +60,7 @@ const tools = {
     //     callback: () => {
     //         open("https://github.com/stevenjoezhang/live2d-widget");
     //     }
-    },
+    // },
     "quit": {
         icon: fa_xmark,
         callback: () => {
