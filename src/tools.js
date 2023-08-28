@@ -25,7 +25,7 @@ const tools = {
     "hitokoto": {
         icon: fa_comment,
         callback: showHitokoto
-    }
+    },
     // "asteroids": {
     //     icon: fa_paper_plane,
     //     callback: () => {
@@ -60,18 +60,18 @@ const tools = {
     //     callback: () => {
     //         open("https://github.com/stevenjoezhang/live2d-widget");
     //     }
-    // },
-    // "quit": {
-    //     icon: fa_xmark,
-    //     callback: () => {
-    //         localStorage.setItem("waifu-display", Date.now());
-    //         showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
-    //         document.getElementById("waifu").style.bottom = "-500px";
-    //         setTimeout(() => {
-    //             document.getElementById("waifu").style.display = "none";
-    //             document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
-    //         }, 3000);
-    //     }
+    },
+    "quit": {
+        icon: fa_xmark,
+        callback: () => {
+            localStorage.setItem("waifu-display", Date.now());
+            showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
+            document.getElementById("waifu").style.bottom = "-500px";
+            setTimeout(() => {
+                document.getElementById("waifu").style.display = "none";
+                document.getElementById("waifu-toggle").classList.add("waifu-toggle-active");
+            }, 3000);
+        }
     }
 };
 
